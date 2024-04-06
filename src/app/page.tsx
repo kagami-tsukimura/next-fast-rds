@@ -161,7 +161,10 @@ export default function Home() {
 
       <div className='flex justify-center'>
         {/* PUT */}
-        <form className='flex flex-col justify-center' onSubmit={putMessage}>
+        <form
+          className='flex flex-col justify-center m-4'
+          onSubmit={putMessage}
+        >
           <input
             type='number'
             className='shadow border rounded w-full py-2 px-4 m-4 text-gray-700 leading-tight focus:outline-none'
@@ -187,11 +190,6 @@ export default function Home() {
           className='flex flex-col justify-center m-4'
           onSubmit={deleteMessage}
         >
-          {/* 位置調整 */}
-          <input
-            type='hidden'
-            className='shadow border rounded w-full py-2 px-4 m-4 text-gray-700 leading-tight focus:outline-none'
-          />
           <input
             type='number'
             className='shadow border rounded w-full py-2 px-4 m-4 text-gray-700 leading-tight focus:outline-none'
