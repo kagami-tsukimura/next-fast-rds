@@ -1,6 +1,6 @@
 "use client";
 import { useState } from "react";
-import { Item } from "../../types";
+import { Item } from "../types";
 
 export default function Home() {
   const [response, setResponse] = useState<any>(null);
@@ -117,7 +117,7 @@ export default function Home() {
 
   return (
     <div className='bg-slate-600 h-screen flex flex-col items-center justify-center'>
-      <h1 className='text-3xl font-bold'>FastAPI item_sub CRUD</h1>
+      <h1 className='text-3xl font-bold'>FastAPI CRUD</h1>
 
       <div className='flex justify-center'>
         {/* GET */}
